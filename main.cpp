@@ -1,6 +1,7 @@
 #include <iostream>
 #include "SelectSort.h"
 #include "BubbleSort.h"
+#include "InsertionSort.h"
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
@@ -12,8 +13,12 @@ int main() {
 //    selectSort->sort(arr,len);
 
     //冒泡排序
-    BubbleSort *bubbleSort = new BubbleSort();
-    bubbleSort->sort(arr,len);
+//    BubbleSort *bubbleSort = new BubbleSort();
+//    bubbleSort->sort(arr,len);
+
+    //插入排序
+    InsertionSort *insertionSort = new InsertionSort();
+    insertionSort->sort(arr,len);
 
 
     for (int i = 0; i < len; ++i) {
